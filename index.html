@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Formulaire d'Inscription</h1>
+    <form action="connected.html" method="post">
+        <label for=""> Nom <input type="text" name="nom" requried> </label>
+        <br>
+        <label for=""> Prenom <input type="text" name="prenom" required> </label>
+        <br>
+        <label for=""> Courriel <input type="email" name="courriel" required> </label>
+        <br>
+        <label for=""> Telephone <input type="tel" name="tel" required> </label>
+        <br>
+        <label for=""> Mot de Passe <input type="password" name="mdp1" required> </label>
+        <br>
+        <label for=""> Mot de Passe <input type="password" name="mdp2" required> </label>
+        <br><br>
+        <!-- Submit execute action du form sauf si function dans onclick return false -->
+        <input type="submit" value="Create" onclick="return valider()"> <input type="reset" value="effacer">
+        <input type="button" value="Don't" onclick="alert('Oh...')">
+        
+    </form>
+
+
+
+
+
+
+
+
+</body>
+</html>
